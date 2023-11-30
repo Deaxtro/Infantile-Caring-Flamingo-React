@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
@@ -20,17 +19,16 @@ const Home = (props) => {
           <span className="home-logo">COACHING</span>
           <div data-thq="thq-navbar-nav" className="home-desktop-menu">
             <nav className="home-links">
-              <a href="#home">Home</a>
-              <a href="#details" className="home-nav2">
-                About
-              </a>
-              <a href="#FAQ" className="home-nav4">
-                <span>FAQ&apos;s</span>
-                <br></br>
-              </a>
+              <span>Home</span>
+              <span className="home-nav2">About</span>
+              <span className="home-nav3">Services</span>
+              <span className="home-nav4">Testimonials</span>
               <span className="home-nav5">Contact</span>
             </nav>
-            <div className="home-buttons"></div>
+            <div className="home-buttons">
+              <button className="home-login button">Login</button>
+              <button className="home-register button">Register</button>
+            </div>
           </div>
           <div data-thq="thq-burger-menu" className="home-burger-menu">
             <svg viewBox="0 0 1024 1024" className="home-icon">
@@ -42,25 +40,22 @@ const Home = (props) => {
               <div className="home-top">
                 <span className="home-logo1">COACHING</span>
                 <div data-thq="thq-close-menu" className="home-close-menu">
-                  <Link to="/" className="home-navlink">
-                    <svg viewBox="0 0 1024 1024" className="home-icon02">
-                      <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
-                    </svg>
-                  </Link>
+                  <svg viewBox="0 0 1024 1024" className="home-icon02">
+                    <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
+                  </svg>
                 </div>
               </div>
               <nav className="home-links1">
-                <a href="#home" className="home-nav11">
-                  Home
-                </a>
-                <a href="#details" className="home-nav21">
-                  About
-                </a>
-                <a href="#FAQ" className="home-nav41">
-                  FAQ&apos;s
-                </a>
+                <span className="home-nav11">Home</span>
+                <span className="home-nav21">About</span>
+                <span className="home-nav31">Services</span>
+                <span className="home-nav41">Testimonials</span>
                 <span className="home-nav51">Contact</span>
               </nav>
+              <div className="home-buttons1">
+                <button className="home-login1 button">Login</button>
+                <button className="home-register1 button">Register</button>
+              </div>
             </div>
             <div>
               <svg viewBox="0 0 950.8571428571428 1024" className="home-icon04">
@@ -77,28 +72,23 @@ const Home = (props) => {
         </header>
       </div>
       <div className="home-hero">
-        <div id="home" className="home-hero1">
+        <div className="home-hero1">
           <div className="home-container01">
             <h1 className="home-hero-heading heading1">
               Unlock Your Potential
             </h1>
-            <video
-              src
-              loop
-              muted
-              poster="https://images.unsplash.com/photo-1700583208354-2abccadccada?ixid=M3w5MTMyMXwwfDF8YWxsfDd8fHx8fHwyfHwxNzAxMjkxOTEzfA&amp;ixlib=rb-4.0.3&amp;w=900"
-              preload="auto"
-              autoPlay
-              playsInline
-              className="home-video"
-            ></video>
+            <span className="home-hero-sub-heading">Coaching Agency</span>
+            <div className="home-btn-group">
+              <button className="home-hero-button1 button">Get Started</button>
+              <button className="home-hero-button2 button">Learn More →</button>
+            </div>
           </div>
         </div>
       </div>
       <div className="home-details">
-        <div id="details" className="home-details1">
+        <div className="home-details1">
           <div className="home-container02">
-            <span className="home-text02 sectionTitle">
+            <span className="home-text sectionTitle">
               <span>Details</span>
               <br></br>
             </span>
@@ -125,7 +115,7 @@ const Home = (props) => {
         <div className="home-features-container">
           <div className="home-features1">
             <div className="home-container03">
-              <span className="home-text05 sectionTitle">
+              <span className="home-text03 sectionTitle">
                 <span>features</span>
                 <br></br>
               </span>
@@ -161,7 +151,7 @@ const Home = (props) => {
       <div className="home-pricing">
         <div className="home-pricing1">
           <div className="home-container05">
-            <span className="home-text08 sectionTitle">
+            <span className="home-text06 sectionTitle">
               <span>Pricing</span>
               <br></br>
             </span>
@@ -175,13 +165,13 @@ const Home = (props) => {
           <div className="home-container06">
             <div className="home-pricing-card">
               <div className="home-container07">
-                <span className="home-text11 heading3">Free</span>
+                <span className="home-text09 heading3">Free</span>
                 <span className="home-free-plan-description">
                   A short description for the free plan
                 </span>
               </div>
               <div className="home-container08">
-                <span className="home-text12">
+                <span className="home-text10">
                   <span>$</span>
                   <span></span>
                 </span>
@@ -189,25 +179,25 @@ const Home = (props) => {
               </div>
               <div className="home-container09">
                 <div className="home-container10">
-                  <span className="home-text15">✔</span>
+                  <span className="home-text13">✔</span>
                   <span className="home-free-plan-features">
                     A feature of the free plan
                   </span>
                 </div>
                 <div className="home-container11">
-                  <span className="home-text16">✔</span>
+                  <span className="home-text14">✔</span>
                   <span className="home-free-plan-features1">
                     A feature of the free plan
                   </span>
                 </div>
                 <div className="home-container12">
-                  <span className="home-text17">✔</span>
+                  <span className="home-text15">✔</span>
                   <span className="home-free-plan-features2">
                     A feature of the free plan
                   </span>
                 </div>
                 <div className="home-container13">
-                  <span className="home-text18">✔</span>
+                  <span className="home-text16">✔</span>
                   <span className="home-free-plan-features3">
                     A feature of the free plan
                   </span>
@@ -217,44 +207,44 @@ const Home = (props) => {
             </div>
             <div className="home-pricing-card1">
               <div className="home-container14">
-                <span className="home-text19 heading3">BASIC</span>
+                <span className="home-text17 heading3">BASIC</span>
                 <span className="home-basic-plan-description">
                   A short description for the basic plan
                 </span>
               </div>
               <div className="home-container15">
-                <span className="home-text20">
+                <span className="home-text18">
                   <span>$</span>
                   <span></span>
                 </span>
                 <span className="home-basic-plan-pricing">7</span>
-                <span className="home-text23">/ month</span>
+                <span className="home-text21">/ month</span>
               </div>
               <div className="home-container16">
                 <div className="home-container17">
-                  <span className="home-text24">✔</span>
-                  <span className="home-text25">All features of FREE plan</span>
+                  <span className="home-text22">✔</span>
+                  <span className="home-text23">All features of FREE plan</span>
                 </div>
                 <div className="home-container18">
-                  <span className="home-text26">✔</span>
+                  <span className="home-text24">✔</span>
                   <span className="home-basic-plan-features">
                     A feature of the basic plan
                   </span>
                 </div>
                 <div className="home-container19">
-                  <span className="home-text27">✔</span>
+                  <span className="home-text25">✔</span>
                   <span className="home-basic-plan-features1">
                     A feature of the basic plan
                   </span>
                 </div>
                 <div className="home-container20">
-                  <span className="home-text28">✔</span>
+                  <span className="home-text26">✔</span>
                   <span className="home-basic-plan-features2">
                     A feature of the basic plan
                   </span>
                 </div>
                 <div className="home-container21">
-                  <span className="home-text29">✔</span>
+                  <span className="home-text27">✔</span>
                   <span className="home-basic-plan-features3">
                     A feature of the basic plan
                   </span>
@@ -266,7 +256,7 @@ const Home = (props) => {
             </div>
             <div className="home-pricing-card2">
               <div className="home-container22">
-                <span className="home-text30 heading3">
+                <span className="home-text28 heading3">
                   <span>PRO</span>
                   <br></br>
                 </span>
@@ -275,34 +265,34 @@ const Home = (props) => {
                 </span>
               </div>
               <div className="home-container23">
-                <span className="home-text33">
+                <span className="home-text31">
                   <span>$</span>
                   <span></span>
                 </span>
                 <span className="home-pro-plan-pricing">20</span>
-                <span className="home-text36">/ month</span>
+                <span className="home-text34">/ month</span>
               </div>
               <div className="home-container24">
                 <div className="home-container25">
-                  <span className="home-text37">✔</span>
-                  <span className="home-text38">
+                  <span className="home-text35">✔</span>
+                  <span className="home-text36">
                      All features of BASIC plan
                   </span>
                 </div>
                 <div className="home-container26">
-                  <span className="home-text39">✔</span>
+                  <span className="home-text37">✔</span>
                   <span className="home-pro-plan-features">
                     A feature of the pro plan
                   </span>
                 </div>
                 <div className="home-container27">
-                  <span className="home-text40">✔</span>
+                  <span className="home-text38">✔</span>
                   <span className="home-pro-plan-features1">
                     A feature of the pro plan
                   </span>
                 </div>
                 <div className="home-container28">
-                  <span className="home-text41">✔</span>
+                  <span className="home-text39">✔</span>
                   <span className="home-pro-plan-features2">
                     A feature of the pro plan
                   </span>
@@ -384,14 +374,14 @@ const Home = (props) => {
       </div>
       <div className="home-faq">
         <div className="home-faq-container">
-          <div id="FAQ" className="home-faq1">
+          <div className="home-faq1">
             <div className="home-container30">
-              <span className="home-text42 sectionTitle">
+              <span className="home-text40 sectionTitle">
                 <span>FAQ</span>
                 <br></br>
               </span>
-              <h2 className="home-text45 heading2">Common questions</h2>
-              <span className="home-text46">
+              <h2 className="home-text43 heading2">Common questions</h2>
+              <span className="home-text44">
                 <span>
                   Here are some of the most common questions that we get.
                 </span>
@@ -496,21 +486,16 @@ const Home = (props) => {
           <div className="home-container32">
             <span className="home-logo2">COACHING</span>
             <nav className="home-nav1 home-nav1">
-              <a href="#home" className="home-nav12">
-                Home
-              </a>
-              <a href="#details" className="home-nav22">
-                About
-              </a>
-              <a href="#FAQ" className="home-nav42">
-                FAQs
-              </a>
+              <span className="home-nav12">Home</span>
+              <span className="home-nav22">About</span>
+              <span className="home-nav32">Services</span>
+              <span className="home-nav42">Testimonials</span>
               <span className="home-nav52">Contact</span>
             </nav>
           </div>
           <div className="home-separator"></div>
           <div className="home-container33">
-            <span className="home-text63">
+            <span className="home-text61">
               © 2023 myCompany, All Rights Reserved.
             </span>
             <div className="home-icon-group1">
